@@ -1,0 +1,52 @@
+[
+  {
+    "prefix": "module",
+    "body": [
+      ":- module ${1:module_name}.",
+      ":- interface.",
+      "",
+      ":- import_module ${2:list}.",
+      "",
+      ":- pred ${3:predicate}(${4:Type::in}, ${5:Type::out}) is ${6:det}.",
+      "",
+      ":- implementation.",
+      "",
+      "${3:predicate}(${7:Input}, ${8:Output}) :-",
+      "    ${0}"
+    ],
+    "description": "Create a Mercury module skeleton"
+  },
+  {
+    "prefix": "pred",
+    "body": [
+      ":- pred ${1:predicate}(${2:Type::in}, ${3:Type::out}) is ${4:det}.${0}"
+    ],
+    "description": "Add a predicate declaration"
+  },
+  {
+    "prefix": "func",
+    "body": [
+      ":- func ${1:function}(${2:Type}) = ${3:ReturnType}.${0}"
+    ],
+    "description": "Add a function declaration"
+  },
+  {
+    "prefix": "clause",
+    "body": [
+      "${1:predicate}(${2:Arguments}) :-",
+      "    ${0}."
+    ],
+    "description": "Add a predicate clause"
+  },
+  {
+    "prefix": "if",
+    "body": [
+      "( if ${1:Condition} then",
+      "    ${2:Then}",
+      "else",
+      "    ${0}",
+      ")"
+    ],
+    "description": "Add a Mercury if-then-else expression"
+  }
+]

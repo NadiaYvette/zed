@@ -1,5 +1,6 @@
 name = "Mercury"
 grammar = "mercury"
+snippets = "snippets.json"
 path_suffixes = ["m", "moo"]
 first_line_pattern = '^\\s*(%.*\\n)*\\s*(:-\\s*module\\b|#!.*\\bmercury\\b)'
 line_comments = ["% "]
