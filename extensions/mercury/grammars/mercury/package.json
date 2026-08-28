@@ -1,0 +1,19 @@
+{
+  "name": "tree-sitter-mercury",
+  "version": "0.1.0",
+  "description": "Tree-sitter grammar for the Mercury programming language",
+  "main": "grammar.js",
+  "scripts": {
+    "generate": "tree-sitter generate"
+  },
+  "license": "MIT",
+  "tree-sitter": [
+    {
+      "scope": "source.mercury",
+      "file-types": ["moo"]
+    }
+  ],
+  "dependencies": {
+    "tree-sitter-cli": "^0.25.0"
+  }
+}

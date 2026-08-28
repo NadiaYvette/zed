@@ -1,0 +1,1170 @@
+[
+  {
+    "type": "argument_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "boolean",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "call",
+    "named": true,
+    "fields": {
+      "arguments": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "argument_list",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "qualified_name",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "call_or_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "qualified_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "character",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "escape_sequence",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "clause",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      },
+      "head": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "call_or_name",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "declaration",
+    "named": true,
+    "fields": {
+      "kind": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "external",
+            "named": false
+          },
+          {
+            "type": "external_func",
+            "named": false
+          },
+          {
+            "type": "external_pred",
+            "named": false
+          },
+          {
+            "type": "finalise",
+            "named": false
+          },
+          {
+            "type": "finalize",
+            "named": false
+          },
+          {
+            "type": "func",
+            "named": false
+          },
+          {
+            "type": "initialise",
+            "named": false
+          },
+          {
+            "type": "initialize",
+            "named": false
+          },
+          {
+            "type": "inst",
+            "named": false
+          },
+          {
+            "type": "instance",
+            "named": false
+          },
+          {
+            "type": "mode",
+            "named": false
+          },
+          {
+            "type": "mutable",
+            "named": false
+          },
+          {
+            "type": "pred",
+            "named": false
+          },
+          {
+            "type": "promise",
+            "named": false
+          },
+          {
+            "type": "solver",
+            "named": false
+          },
+          {
+            "type": "type",
+            "named": false
+          },
+          {
+            "type": "typeclass",
+            "named": false
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "declaration_body",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "declaration_body",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "qualified_name",
+          "named": true
+        },
+        {
+          "type": "type_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "disjunction",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "disjunction",
+          "named": true
+        },
+        {
+          "type": "if_expression",
+          "named": true
+        },
+        {
+          "type": "infix_expression",
+          "named": true
+        },
+        {
+          "type": "list",
+          "named": true
+        },
+        {
+          "type": "literal",
+          "named": true
+        },
+        {
+          "type": "not_expression",
+          "named": true
+        },
+        {
+          "type": "parenthesized",
+          "named": true
+        },
+        {
+          "type": "qualified_name",
+          "named": true
+        },
+        {
+          "type": "quantified_expression",
+          "named": true
+        },
+        {
+          "type": "state_variable",
+          "named": true
+        },
+        {
+          "type": "try_expression",
+          "named": true
+        },
+        {
+          "type": "tuple",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "foreign_code",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "parenthesized",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "if_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "infix_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "literal",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "character",
+          "named": true
+        },
+        {
+          "type": "float",
+          "named": true
+        },
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "quoted_atom",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "module_declaration",
+    "named": true,
+    "fields": {
+      "kind": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "end_module",
+            "named": false
+          },
+          {
+            "type": "import_module",
+            "named": false
+          },
+          {
+            "type": "include_module",
+            "named": false
+          },
+          {
+            "type": "module",
+            "named": false
+          },
+          {
+            "type": "use_module",
+            "named": false
+          }
+        ]
+      },
+      "module": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "not_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parenthesized",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pragma_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "parenthesized",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "punctuation",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "qualified_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "quantified_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "variable_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "quoted_atom",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "escape_sequence",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "section_declaration",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "clause",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "foreign_code",
+          "named": true
+        },
+        {
+          "type": "module_declaration",
+          "named": true
+        },
+        {
+          "type": "pragma_declaration",
+          "named": true
+        },
+        {
+          "type": "punctuation",
+          "named": true
+        },
+        {
+          "type": "section_declaration",
+          "named": true
+        },
+        {
+          "type": "shebang",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "string",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "escape_sequence",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "try_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tuple",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "qualified_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "variable",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "variable_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "!",
+    "named": false
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "'",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": "--->",
+    "named": false
+  },
+  {
+    "type": "-->",
+    "named": false
+  },
+  {
+    "type": "->",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "..",
+    "named": false
+  },
+  {
+    "type": "/",
+    "named": false
+  },
+  {
+    "type": "//",
+    "named": false
+  },
+  {
+    "type": "/\\",
+    "named": false
+  },
+  {
+    "type": "0'",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": ":-",
+    "named": false
+  },
+  {
+    "type": "::",
+    "named": false
+  },
+  {
+    "type": ":=",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "<=",
+    "named": false
+  },
+  {
+    "type": "<=>",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "=.",
+    "named": false
+  },
+  {
+    "type": "=:=",
+    "named": false
+  },
+  {
+    "type": "=<",
+    "named": false
+  },
+  {
+    "type": "=>",
+    "named": false
+  },
+  {
+    "type": "=\\=",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": ">=",
+    "named": false
+  },
+  {
+    "type": "@<",
+    "named": false
+  },
+  {
+    "type": "@=<",
+    "named": false
+  },
+  {
+    "type": "@>",
+    "named": false
+  },
+  {
+    "type": "@>=",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "\\+",
+    "named": false
+  },
+  {
+    "type": "\\/",
+    "named": false
+  },
+  {
+    "type": "\\=",
+    "named": false
+  },
+  {
+    "type": "\\==",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "^",
+    "named": false
+  },
+  {
+    "type": "all",
+    "named": false
+  },
+  {
+    "type": "block_comment",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "catch",
+    "named": false
+  },
+  {
+    "type": "check_termination",
+    "named": false
+  },
+  {
+    "type": "consider_used",
+    "named": false
+  },
+  {
+    "type": "div",
+    "named": false
+  },
+  {
+    "type": "does_not_terminate",
+    "named": false
+  },
+  {
+    "type": "else",
+    "named": false
+  },
+  {
+    "type": "end_module",
+    "named": false
+  },
+  {
+    "type": "escape_sequence",
+    "named": true
+  },
+  {
+    "type": "external",
+    "named": false
+  },
+  {
+    "type": "external_func",
+    "named": false
+  },
+  {
+    "type": "external_pred",
+    "named": false
+  },
+  {
+    "type": "fact_table",
+    "named": false
+  },
+  {
+    "type": "fail",
+    "named": false
+  },
+  {
+    "type": "false",
+    "named": false
+  },
+  {
+    "type": "finalise",
+    "named": false
+  },
+  {
+    "type": "finalize",
+    "named": false
+  },
+  {
+    "type": "float",
+    "named": true
+  },
+  {
+    "type": "foreign_code",
+    "named": false
+  },
+  {
+    "type": "foreign_decl",
+    "named": false
+  },
+  {
+    "type": "foreign_proc",
+    "named": false
+  },
+  {
+    "type": "foreign_type",
+    "named": false
+  },
+  {
+    "type": "format_call",
+    "named": false
+  },
+  {
+    "type": "func",
+    "named": false
+  },
+  {
+    "type": "identifier",
+    "named": true
+  },
+  {
+    "type": "if",
+    "named": false
+  },
+  {
+    "type": "implementation",
+    "named": false
+  },
+  {
+    "type": "import_module",
+    "named": false
+  },
+  {
+    "type": "include_module",
+    "named": false
+  },
+  {
+    "type": "initialise",
+    "named": false
+  },
+  {
+    "type": "initialize",
+    "named": false
+  },
+  {
+    "type": "inline",
+    "named": false
+  },
+  {
+    "type": "inst",
+    "named": false
+  },
+  {
+    "type": "instance",
+    "named": false
+  },
+  {
+    "type": "integer",
+    "named": true
+  },
+  {
+    "type": "interface",
+    "named": false
+  },
+  {
+    "type": "line_comment",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "loop_check",
+    "named": false
+  },
+  {
+    "type": "memo",
+    "named": false
+  },
+  {
+    "type": "minimal_model",
+    "named": false
+  },
+  {
+    "type": "mod",
+    "named": false
+  },
+  {
+    "type": "mode",
+    "named": false
+  },
+  {
+    "type": "module",
+    "named": false
+  },
+  {
+    "type": "mutable",
+    "named": false
+  },
+  {
+    "type": "no",
+    "named": false
+  },
+  {
+    "type": "no_inline",
+    "named": false
+  },
+  {
+    "type": "not",
+    "named": false
+  },
+  {
+    "type": "obsolete",
+    "named": false
+  },
+  {
+    "type": "pragma",
+    "named": false
+  },
+  {
+    "type": "pred",
+    "named": false
+  },
+  {
+    "type": "promise",
+    "named": false
+  },
+  {
+    "type": "rem",
+    "named": false
+  },
+  {
+    "type": "require_complete_switch",
+    "named": false
+  },
+  {
+    "type": "require_det",
+    "named": false
+  },
+  {
+    "type": "require_failure",
+    "named": false
+  },
+  {
+    "type": "require_multi",
+    "named": false
+  },
+  {
+    "type": "require_nondet",
+    "named": false
+  },
+  {
+    "type": "require_semidet",
+    "named": false
+  },
+  {
+    "type": "shebang",
+    "named": true
+  },
+  {
+    "type": "solver",
+    "named": false
+  },
+  {
+    "type": "some",
+    "named": false
+  },
+  {
+    "type": "source_file",
+    "named": false
+  },
+  {
+    "type": "state_variable",
+    "named": true
+  },
+  {
+    "type": "terminates",
+    "named": false
+  },
+  {
+    "type": "then",
+    "named": false
+  },
+  {
+    "type": "true",
+    "named": false
+  },
+  {
+    "type": "try",
+    "named": false
+  },
+  {
+    "type": "type",
+    "named": false
+  },
+  {
+    "type": "type_spec",
+    "named": false
+  },
+  {
+    "type": "typeclass",
+    "named": false
+  },
+  {
+    "type": "use_module",
+    "named": false
+  },
+  {
+    "type": "where",
+    "named": false
+  },
+  {
+    "type": "yes",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "|",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]

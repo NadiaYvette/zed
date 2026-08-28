@@ -1,0 +1,75 @@
+==================
+comment-prefixed module
+==================
+% A long module header comment.
+% Another header line.
+:- module demo.
+:- interface.
+:- pred hello(string::in, io::di, io::uo) is det.
+:- implementation.
+hello(Message, !IO) :-
+    io.write_line(Message, !IO).
+
+---
+
+(source_file
+  (line_comment)
+  (line_comment)
+  (module_declaration
+    module: (identifier))
+  (section_declaration)
+  (declaration
+    (declaration_body
+      (type_expression
+        (qualified_name
+          (identifier))
+        (argument_list
+          (expression
+            (infix_expression))
+          (expression
+            (infix_expression))
+          (expression
+            (infix_expression))))))
+  (section_declaration)
+  (clause
+    (call_or_name
+      (call
+        (qualified_name
+          (identifier))
+        (argument_list
+          (expression
+            (variable))
+          (expression
+            (state_variable)))))
+    body: (expression
+      (call
+        (qualified_name
+          (identifier)
+          (identifier))
+        (argument_list
+          (expression
+            (variable))
+          (expression
+            (state_variable)))))))
+
+==================
+literals and control flow
+==================
+main(!IO) :-
+    X = 42,
+    ( if X > 0 then true else fail ),
+    io.write_string("ok", !IO).
+
+---
+
+(source_file
+  (clause
+    (call_or_name
+      (call
+        (qualified_name
+          (identifier))
+        (argument_list
+          (expression
+            (state_variable)))))
+    body: (expression
+      (infix_expression))))
