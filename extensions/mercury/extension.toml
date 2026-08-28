@@ -7,8 +7,8 @@ authors = ["Nadia Chambers"]
 repository = "https://github.com/pomid0rko0/mercury-vscode-plugin"
 
 [grammars.mercury]
-repository = "https://github.com/NadiaYvette/zed"
-commit = "a663090366"
+repository = "https://github.com/NadiaYvette/tree-sitter-mercury"
+commit = "0000c7c"
 
 [language_servers.mercury-language-server]
 name = "Mercury Language Server"
