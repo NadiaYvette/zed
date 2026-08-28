@@ -8,7 +8,7 @@ repository = "https://github.com/pomid0rko0/mercury-vscode-plugin"
 
 [grammars.mercury]
 repository = "https://github.com/NadiaYvette/tree-sitter-mercury"
-commit = "0000c7c"
+commit = "0000c7c7b5c2b4a54ca58014123daa9668666ed0"
 
 [language_servers.mercury-language-server]
 name = "Mercury Language Server"
