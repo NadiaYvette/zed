@@ -251,6 +251,7 @@ members = [
 
     "extensions/glsl",
     "extensions/html",
+    "extensions/mercury",
     "extensions/proto",
     "extensions/test-extension",
 

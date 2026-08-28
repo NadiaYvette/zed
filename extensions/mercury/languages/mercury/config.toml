@@ -1,0 +1,12 @@
+name = "Mercury"
+path_suffixes = ["moo"]
+first_line_pattern = '^\\s*(%.*\\n)*\\s*(:-\\s*module\\b|#!.*\\bmercury\\b)'
+line_comments = ["% "]
+autoclose_before = ";:.,=}])>"
+brackets = [
+    { start = "{", end = "}", close = true, newline = true },
+    { start = "[", end = "]", close = true, newline = true },
+    { start = "(", end = ")", close = true, newline = true },
+    { start = "\"", end = "\"", close = true, newline = false, not_in = ["comment", "string"] },
+    { start = "'", end = "'", close = true, newline = false, not_in = ["comment", "string"] },
+]

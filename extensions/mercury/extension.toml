@@ -1,0 +1,15 @@
+id = "mercury"
+name = "Mercury"
+description = "Mercury language support using the Mercury Language Plugin server."
+version = "0.1.0"
+schema_version = 1
+authors = ["Nadia Chambers"]
+repository = "https://github.com/pomid0rko0/mercury-vscode-plugin"
+
+[grammars.mercury]
+repository = "file:///home/nyc/src/zed/extensions/mercury/grammars/mercury"
+commit = "local"
+
+[language_servers.mercury-language-server]
+name = "Mercury Language Server"
+languages = ["Mercury"]

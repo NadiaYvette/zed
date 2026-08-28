@@ -1,0 +1,16 @@
+[package]
+name = "zed_mercury"
+version = "0.1.0"
+edition.workspace = true
+publish.workspace = true
+license = "MIT"
+
+[lints]
+workspace = true
+
+[lib]
+path = "src/mercury.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+zed_extension_api = "0.7.0"
