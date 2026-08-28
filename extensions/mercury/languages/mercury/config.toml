@@ -1,5 +1,6 @@
 name = "Mercury"
-path_suffixes = ["moo"]
+grammar = "mercury"
+path_suffixes = ["m", "moo"]
 first_line_pattern = '^\\s*(%.*\\n)*\\s*(:-\\s*module\\b|#!.*\\bmercury\\b)'
 line_comments = ["% "]
 autoclose_before = ";:.,=}])>"

@@ -1,15 +1,28 @@
 id = "mercury"
 name = "Mercury"
-description = "Mercury language support using the Mercury Language Plugin server."
 version = "0.1.0"
 schema_version = 1
+description = "Mercury language support using the Mercury Language Plugin server."
+repository = "https://github.com/NadiaYvette/zed"
 authors = ["Nadia Chambers"]
-repository = "https://github.com/pomid0rko0/mercury-vscode-plugin"
+themes = []
+icon_themes = []
+languages = ["languages/mercury"]
+capabilities = []
+
+[lib]
+kind = "Rust"
+version = "0.7.0"
 
 [grammars.mercury]
 repository = "https://github.com/NadiaYvette/tree-sitter-mercury"
 commit = "0000c7c7b5c2b4a54ca58014123daa9668666ed0"
 
 [language_servers.mercury-language-server]
-name = "Mercury Language Server"
 languages = ["Mercury"]
+
+[language_servers.mercury-language-server.language_ids]
+
+[context_servers]
+
+[slash_commands]

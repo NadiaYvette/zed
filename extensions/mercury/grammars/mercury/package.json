@@ -6,7 +6,7 @@
   "scripts": {
     "generate": "tree-sitter generate"
   },
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "tree-sitter": [
     {
       "scope": "source.mercury",
